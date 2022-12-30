@@ -19,6 +19,7 @@
 		02B88809295E55BA00DFEDD4 /* NetworkingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B88808295E55BA00DFEDD4 /* NetworkingModel.swift */; };
 		02B8880D295E771B00DFEDD4 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8880C295E771B00DFEDD4 /* CustomTableViewController.swift */; };
 		02B8880F295E775900DFEDD4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8880E295E775900DFEDD4 /* CustomTableViewCell.swift */; };
+		02B88811295E8C7700DFEDD4 /* UserPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B88810295E8C7700DFEDD4 /* UserPrefs.swift */; };
 		5ED7AC9BE55F5880669604BF /* Pods_APINetworking_APINetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286D6F7047C2579A974958A5 /* Pods_APINetworking_APINetworkingUITests.framework */; };
 		A33486AE13D7FA04FEDFFD92 /* Pods_APINetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032896A1E59F075B934156CB /* Pods_APINetworkingTests.framework */; };
 		AE169C8FABEA31965A6A843E /* Pods_APINetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDFEB8CEF1DC3E71AB82568 /* Pods_APINetworking.framework */; };
@@ -58,6 +59,7 @@
 		02B88808295E55BA00DFEDD4 /* NetworkingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModel.swift; sourceTree = "<group>"; };
 		02B8880C295E771B00DFEDD4 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		02B8880E295E775900DFEDD4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		02B88810295E8C7700DFEDD4 /* UserPrefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrefs.swift; sourceTree = "<group>"; };
 		032896A1E59F075B934156CB /* Pods_APINetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APINetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F68B2BC90C19A843015D2CC /* Pods-APINetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APINetworking.debug.xcconfig"; path = "Target Support Files/Pods-APINetworking/Pods-APINetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		286D6F7047C2579A974958A5 /* Pods_APINetworking_APINetworkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APINetworking_APINetworkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				02B88808295E55BA00DFEDD4 /* NetworkingModel.swift */,
+				02B88810295E8C7700DFEDD4 /* UserPrefs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				02B8879E295E4D7C00DFEDD4 /* ViewController.swift in Sources */,
 				02B88809295E55BA00DFEDD4 /* NetworkingModel.swift in Sources */,
 				02B8879A295E4D7C00DFEDD4 /* AppDelegate.swift in Sources */,
+				02B88811295E8C7700DFEDD4 /* UserPrefs.swift in Sources */,
 				02B8879C295E4D7C00DFEDD4 /* SceneDelegate.swift in Sources */,
 				02B8880D295E771B00DFEDD4 /* CustomTableViewController.swift in Sources */,
 			);

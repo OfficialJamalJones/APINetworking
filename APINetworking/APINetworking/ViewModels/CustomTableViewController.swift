@@ -18,9 +18,13 @@ class CustomTableViewController: UITableViewController {
         DispatchQueue.main.async {
             
             self.films = self.networkingModel.films
-            self.tableView.reloadData()
+            
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
