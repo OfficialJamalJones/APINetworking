@@ -10,21 +10,25 @@ import Alamofire
 
 class NetworkingModel {
     
-    var films:Films?
+    var films:Films!
     
     func loadData(fileName: String) {
         let request = Alamofire.request(fileName)
         request.responseJSON { response in
+            DispatchQueue.main.async {
+                let data = response.data
+                do {
+                    let decoder = JSONDecoder()
+                    let jsonData = try decoder.decode(Films.self, from: data!)
+                    self.films = jsonData
+                    print("Films: \(self.films?.all)")
+                } catch {
+                    print("error:\(error)")
+                }
+                   
+               }
             
-            let data = response.data
-            do {
-                let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(Films.self, from: data!)
-                self.films = jsonData
-                print(self.films)
-            } catch {
-                print("error:\(error)")
-            }
+            
         }
     }
 }
