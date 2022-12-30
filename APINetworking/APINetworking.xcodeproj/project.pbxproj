@@ -16,6 +16,7 @@
 		02B887B1295E4D7E00DFEDD4 /* APINetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B887B0295E4D7E00DFEDD4 /* APINetworkingTests.swift */; };
 		02B887BB295E4D7E00DFEDD4 /* APINetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B887BA295E4D7E00DFEDD4 /* APINetworkingUITests.swift */; };
 		02B887BD295E4D7E00DFEDD4 /* APINetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B887BC295E4D7E00DFEDD4 /* APINetworkingUITestsLaunchTests.swift */; };
+		02B88809295E55BA00DFEDD4 /* NetworkingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B88808295E55BA00DFEDD4 /* NetworkingModel.swift */; };
 		5ED7AC9BE55F5880669604BF /* Pods_APINetworking_APINetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286D6F7047C2579A974958A5 /* Pods_APINetworking_APINetworkingUITests.framework */; };
 		A33486AE13D7FA04FEDFFD92 /* Pods_APINetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032896A1E59F075B934156CB /* Pods_APINetworkingTests.framework */; };
 		AE169C8FABEA31965A6A843E /* Pods_APINetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDFEB8CEF1DC3E71AB82568 /* Pods_APINetworking.framework */; };
@@ -52,6 +53,7 @@
 		02B887B6295E4D7E00DFEDD4 /* APINetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APINetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B887BA295E4D7E00DFEDD4 /* APINetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkingUITests.swift; sourceTree = "<group>"; };
 		02B887BC295E4D7E00DFEDD4 /* APINetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02B88808295E55BA00DFEDD4 /* NetworkingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModel.swift; sourceTree = "<group>"; };
 		032896A1E59F075B934156CB /* Pods_APINetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APINetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F68B2BC90C19A843015D2CC /* Pods-APINetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APINetworking.debug.xcconfig"; path = "Target Support Files/Pods-APINetworking/Pods-APINetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		286D6F7047C2579A974958A5 /* Pods_APINetworking_APINetworkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APINetworking_APINetworkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,12 +121,7 @@
 				02B88807295E511000DFEDD4 /* ViewModels */,
 				02B88806295E510600DFEDD4 /* Views */,
 				02B88805295E50F700DFEDD4 /* Models */,
-				02B88799295E4D7C00DFEDD4 /* AppDelegate.swift */,
-				02B8879D295E4D7C00DFEDD4 /* ViewController.swift */,
-				02B8879B295E4D7C00DFEDD4 /* SceneDelegate.swift */,
-				02B8879F295E4D7C00DFEDD4 /* Main.storyboard */,
 				02B887A2295E4D7D00DFEDD4 /* Assets.xcassets */,
-				02B887A4295E4D7D00DFEDD4 /* LaunchScreen.storyboard */,
 				02B887A7295E4D7D00DFEDD4 /* Info.plist */,
 			);
 			path = APINetworking;
@@ -150,6 +147,7 @@
 		02B88805295E50F700DFEDD4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				02B88808295E55BA00DFEDD4 /* NetworkingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +155,8 @@
 		02B88806295E510600DFEDD4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				02B887A4295E4D7D00DFEDD4 /* LaunchScreen.storyboard */,
+				02B8879F295E4D7C00DFEDD4 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +164,9 @@
 		02B88807295E511000DFEDD4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				02B8879D295E4D7C00DFEDD4 /* ViewController.swift */,
+				02B88799295E4D7C00DFEDD4 /* AppDelegate.swift */,
+				02B8879B295E4D7C00DFEDD4 /* SceneDelegate.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,7 +181,6 @@
 				9AACAC15501F9DDBB65A7B53 /* Pods-APINetworkingTests.debug.xcconfig */,
 				C662D009624832F27F323038 /* Pods-APINetworkingTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -432,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B8879E295E4D7C00DFEDD4 /* ViewController.swift in Sources */,
+				02B88809295E55BA00DFEDD4 /* NetworkingModel.swift in Sources */,
 				02B8879A295E4D7C00DFEDD4 /* AppDelegate.swift in Sources */,
 				02B8879C295E4D7C00DFEDD4 /* SceneDelegate.swift in Sources */,
 			);
