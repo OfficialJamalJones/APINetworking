@@ -12,16 +12,17 @@ class NetworkingModel {
     
     var films:Films!
     
-    func loadData(fileName: String) {
+    func loadData(fileName: String, handler: @escaping (Films) -> ()) {
         let request = Alamofire.request(fileName)
         request.responseJSON { response in
+            let data = response.data
             DispatchQueue.main.async {
-                let data = response.data
+                
                 do {
                     let decoder = JSONDecoder()
                     let jsonData = try decoder.decode(Films.self, from: data!)
                     self.films = jsonData
-                    print("Films: \(self.films?.all)")
+                    handler(self.films)
                 } catch {
                     print("error:\(error)")
                 }
@@ -34,7 +35,7 @@ class NetworkingModel {
 }
 
 
-struct Film: Decodable {
+struct Film: Codable {
   let id: Int
   let title: String
   let openingCrawl: String
@@ -54,7 +55,7 @@ struct Film: Decodable {
   }
 }
 
-struct Films: Decodable {
+struct Films: Codable {
   let count: Int
   let all: [Film]
   
